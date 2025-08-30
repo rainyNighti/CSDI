@@ -1,12 +1,12 @@
 # CSDI: A Fine-Grained Fundus Image Dataset of Cataract Severity and Diagnostic Images
 
-The **CSDI Cataract Diagnosis Dataset** is a curated collection of 187 fundus images with expert annotations, including cataract severity scores and bilingual diagnostic descriptions (Chinese and English). This dataset supports research in automated cataract screening, grading, and fundus image interpretation using both image and text modalities.
+The **CSDI Cataract Diagnosis Dataset** is a curated collection of 187 fundus images with expert annotations, including cataract severity scores and bilingual diagnostic descriptions (English and Chinese). This dataset supports research in automated cataract screening, grading, and fundus image interpretation using both image and text modalities.
 
 ## 📁 Dataset Overview
 
 - **Total images**: 187
 - **Image formats**: `.png` and `.jpg`
-- **Annotation file**: `CSDI_diagnosis.csv`
+- **Annotation file**: `CSDI_annotations.csv`
 - **Labels**: Cataract severity score (0–10), optic disc localization, optic disc clarity, expert-written diagnoses
 
 ## 📂 File Structure
@@ -16,24 +16,26 @@ CSDI/
 │ ├── cataract_001.png
 │ ├── cataract_002.jpg
 │ └── ...
-├── CSDI_diagnosis.csv # Annotation CSV file (UTF-8 encoded)
+├── CSDI_annotations.csv # Annotation CSV file (UTF-8 encoded)
 └── README.md # Dataset description
 ```
 
 
-## 🗒️ CSV Annotation File (`CSDI_diagnosis.csv`)
-- The CSV annotation file is encoded in **UTF-8** to ensure proper display of Chinese and English characters.
-
+## 🗒️ CSV Annotation File (`CSDI_annotations.csv`)
+- The CSV annotation file is encoded in **UTF-8** to ensure proper display of English and Chinese characters.
+- 
 | Column Name                | Description |
-|---------------------------|-------------|
-| `id`                      | Image file name (e.g., `cataract_001.png`) |
-| `score`                   | Cataract severity score (range 0–10) |
-| `Chinese_diagnosis`      | Diagnosis in Chinese |
-| `English_diagnosis`      | Diagnosis in English |
-| `optic_x`, `optic_y`     | **Top-left corner** of the optic disc bounding box if `optic_disc_clear` is `clear`, or of the entire fundus region if `optic_disc_clear` is `blurry`. The coordinates are expressed as a percentage of image width/height (range 0–100). |
-| `optic_width`, `optic_height` | Width and height of the optic disc bounding box (if `optic_disc_clear` is `clear`) or the entire visible region (if `blurry`), expressed as a percentage of image width/height. |
-| `optic_disc_clear`       | Optic disc visibility (`clear` / `blurry`) |
-| `image_width`, `image_height` | Actual image resolution in pixels |
+|-----------------------------|-------------|
+| `id`                       | Image file name (e.g., `cataract_001.png`) |
+| `score`                    | Cataract severity score (range 0–10) |
+| `English_diagnosis`        | Diagnosis in English |
+| `Chinese_diagnosis`        | Diagnosis in Chinese |
+| `original_image_width`     | Original image width in pixels |
+| `original_image_height`    | Original image height in pixels |
+| `fundus_region_x1 / y1 / x2 / y2` | Coordinates of the annotated fundus region in pixels; `-1` if not visible |
+| `optic_disc_clear`         | Optic disc visibility (`visible` / `not visible`) |
+| `optic_disc_x1 / y1 / x2 / y2` | Coordinates of the optic disc bounding box in pixels; `-1` if not visible |
+
 
 > The `score` field supports both **regression** (exact score prediction) and **classification** (e.g., mild/moderate/severe).
 
