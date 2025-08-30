@@ -85,7 +85,7 @@ English and Chinese versions of the diagnostic descriptions are included to supp
   python crop_fundus_images.py -i csdi_datasets/original_images -o csdi_datasets/cropped_images -p 0 -c crop_info.csv
   ```
   
-  augment_fundus_images.py: Apply random rotations, zoom-ins, and rotation+zoom augmentations to cropped images.
+- **augment_fundus_images.py**: Apply random rotations, zoom-ins, and rotation+zoom augmentations to cropped images.
   ```bash
   python augment_fundus_images.py
   ```
