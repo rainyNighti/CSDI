@@ -19,7 +19,9 @@ CSDI/
 │ └── ...
 ├── CSDI_annotations.csv # Annotation CSV file (UTF-8 encoded)
 ├── README.md                  # Dataset description
-└── LICENSE.md                 # Dataset license (CC BY-NC 4.0)
+├── LICENSE.md                 # Dataset license (CC BY-NC 4.0)
+├── crop_fundus_images.py      # Script for cropping fundus images
+└── augment_fundus_images.py   # Script for image augmentation
 ```
 
 
@@ -75,6 +77,18 @@ This standardized scoring system and diagnostic protocol were strictly adhered t
 ---
 
 English and Chinese versions of the diagnostic descriptions are included to support multilingual and cross-lingual research applications.
+
+## 💻 Code Scripts
+
+- **crop_fundus_images.py**: Crop fundus images to remove black borders and save cropping info in CSV.  
+  ```bash
+  python crop_fundus_images.py -i csdi_datasets/original_images -o csdi_datasets/cropped_images -p 0 -c crop_info.csv
+  ```
+  
+  augment_fundus_images.py: Apply random rotations, zoom-ins, and rotation+zoom augmentations to cropped images.
+  ```bash
+  python augment_fundus_images.py
+  ```
 
 
 ## 🎯 Applications
