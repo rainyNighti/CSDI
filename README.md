@@ -18,7 +18,8 @@ CSDI/
 │ ├── cataract_002.jpg
 │ └── ...
 ├── CSDI_annotations.csv # Annotation CSV file (UTF-8 encoded)
-└── README.md # Dataset description
+├── README.md                  # Dataset description
+└── LICENSE.md                 # Dataset license (CC BY-NC 4.0)
 ```
 
 
