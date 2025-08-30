@@ -1,6 +1,7 @@
 # CSDI: A Fine-Grained Fundus Image Dataset of Cataract Severity and Diagnostic Images
 
 The **CSDI Cataract Diagnosis Dataset** is a curated collection of 187 fundus images with expert annotations, including cataract severity scores and bilingual diagnostic descriptions (English and Chinese). This dataset supports research in automated cataract screening, grading, and fundus image interpretation using both image and text modalities.
+This dataset is licensed under CC BY-NC 4.0. See [LICENSE.md](LICENSE.md) for details.
 
 ## 📁 Dataset Overview
 
