@@ -93,7 +93,7 @@ Zixun Xie<sup>1,2,\*</sup>, Mingxin Ao<sup>3,\*</sup>, Haiming Tang<sup>1,4,\*</
 <sup>4</sup>School of Computing, National University of Singapore, Singapore  
 <sup>5</sup>School of Future Technology, Peking University, China  
 
-**\*** Equal contribution.  
+**\*** Equal contribution and co-first authors.
 **†** Corresponding authors.  
 
 ## 📬 Contact
