@@ -7,7 +7,7 @@ The **CSDI Cataract Diagnosis Dataset** is a curated collection of 187 fundus im
 - **Total images**: 187
 - **Image formats**: `.png` and `.jpg`
 - **Annotation file**: `CSDI_annotations.csv`
-- **Labels**: Cataract severity score (0–10), optic disc localization, optic disc clarity, expert-written diagnoses
+- **Labels**: Cataract severity score (0–10), expert-written diagnoses, optic disc localization, optic disc clarity
 
 ## 📂 File Structure
 ```
@@ -46,16 +46,16 @@ The cataract severity grading criteria are defined as follows, with decimal scor
 | Severity Level   | Score Range | Quantity | Percentage (%) |
 |------------------|-------------|----------|----------------|
 | Normal           | [0, 1)      | 9        | 4.81           |
-| Mild             | [1, 3)      | 30       | 16.04          |
-| Moderate         | [3, 5)      | 39       | 20.86          |
-| Bad/Advanced     | [5, 7)      | 48       | 25.67          |
+| Acceptable       | [1, 3)      | 30       | 16.04          |
+| Mild             | [3, 5)      | 39       | 20.86          |
+| Moderate         | [5, 7)      | 48       | 25.67          |
 | Severe           | [7, 10]     | 61       | 32.62          |
 
 - **0–1 (Normal):** No cataract; fundus images are clear with no lens opacity affecting image quality.  
-- **1–3 (Mild):** Mild cataract; images remain clear with subtle blurring, low likelihood of visual impairment.  
-- **3–5 (Moderate):** Moderate cataract; image clarity decreases, regular visual monitoring recommended, surgery unlikely immediately necessary.  
-- **5–7 (Bad/Advanced):** Noticeable reduction in image clarity, higher probability of visual impairment, elective surgery may be considered.  
-- **7–10 (Severe):** Marked reduction in image clarity, significant impact on visual function, prompt surgical intervention advised.  
+- **1–3 (Acceptable):** Acceptable cataract; images remain clear with subtle blurring, low likelihood of visual impairment.  
+- **3–5 (Mild):** Mild cataract; image clarity decreases, regular visual monitoring recommended, surgery unlikely immediately necessary.  
+- **5–7 (Moderate):** Moderate cataract; noticeable reduction in image clarity, higher probability of visual impairment, elective surgery may be considered.  
+- **7–10 (Severe):** Severe cataract; marked reduction in image clarity, significant impact on visual function, prompt surgical intervention advised.  
 
 ---
 
@@ -72,7 +72,7 @@ This standardized scoring system and diagnostic protocol were strictly adhered t
 
 ---
 
-Chinese and English versions of the diagnostic descriptions are included to support multilingual and cross-lingual research applications.
+English and Chinese versions of the diagnostic descriptions are included to support multilingual and cross-lingual research applications.
 
 
 ## 🎯 Applications
