@@ -19,7 +19,7 @@ CSDI/
 │ └── ...
 ├── CSDI_annotations.csv # Annotation CSV file (UTF-8 encoded)
 ├── README.md                  # Dataset description
-├── LICENSE.md                 # Dataset license (CC BY-NC 4.0)
+├── LICENSE.md                 # Dataset license (CC BY 4.0)
 ├── crop_fundus_images.py      # Script for cropping fundus images
 └── augment_fundus_images.py   # Script for image augmentation
 ```
