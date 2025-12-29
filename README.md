@@ -14,18 +14,17 @@ This dataset is licensed under CC BY-NC 4.0. See [LICENSE.md](LICENSE.md) for de
 ```
 CSDI/
 ├── csdi/                      # Training and evaluation code 
-├── data/ 
-├── original_images/         # Folder containing 187 fundus images (.png and .jpg)
+├── original_images/           # Folder containing 187 fundus images (.png and .jpg)
 │ ├── cataract_001.png
 │ ├── cataract_002.jpg
 │ └── ...
-├── CSDI_annotations.csv # Annotation CSV file (UTF-8 encoded)
+├── CSDI_annotations.csv       # Annotation CSV file (UTF-8 encoded)
 ├── README.md                  # Dataset description
 ├── LICENSE.md                 # Dataset license (CC BY 4.0)
 ├── crop_fundus_images.py      # Script for cropping fundus images
-└── augment_fundus_images.py   # Script for image augmentation
-└── dataset_split.py           # Includes information about the validation data split
-└── prompt.py                  # Prompts for training and inference
+├── augment_fundus_images.py   # Script for image augmentation
+├── dataset_split.py           # Includes information about the validation data split
+├── prompt.py                  # Prompts for training and inference
 └── create_dataset_json.py     # Create training and inference JSON files
 ```
 
