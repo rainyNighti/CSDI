@@ -168,6 +168,7 @@ Our work is inspired by these excellent open-sourced repos:
 ## Citation
 
 If you find this project helpful, please consider citing the following paper:
+```bibtex
 @misc{csdi2025cataract,
   title        = {CSDI: A Fine-Grained Fundus Image Dataset of Cataract Severity and Diagnostic Images},
   author       = {Xie, Zixun and Ao, Mingxin and Tang, Haiming and Li, Xuemin and Bai, Xiang and Zhang, Shanghang and Li, Dawei},
