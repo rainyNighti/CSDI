@@ -130,9 +130,13 @@ Zixun Xie<sup>1,2,\*</sup>, Mingxin Ao<sup>3,\*</sup>, Haiming Tang<sup>1,4,\*</
 ## 📜 Citation
 
 ```bibtex
-@misc{csdi2025cataract,
-  title        = {CSDI: A Fine-Grained Fundus Image Dataset of Cataract Severity and Diagnostic Images},
-  author       = {Xie, Zixun and Ao, Mingxin and Tang, Haiming and Li, Xuemin and Bai, Xiang and Zhang, Shanghang and Li, Dawei},
-  year         = {2025},
-  note         = {Under review at Scientific Data}
+@article{xie2026fine,
+  title={A fine-grained fundus image dataset for cataract severity assessment and diagnosis},
+  author={Xie, Zixun and Ao, Mingxin and Tang, Haiming and Li, Xuemin and Bai, Xiang and Zhang, Shanghang and Li, Dawei},
+  journal={Scientific Data},
+  volume={13},
+  number={1},
+  pages={418},
+  year={2026},
+  publisher={Nature Publishing Group UK London}
 }
